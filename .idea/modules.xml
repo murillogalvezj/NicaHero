@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NicaHeroLayout.iml" filepath="$PROJECT_DIR$/NicaHeroLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NicaHero.iml" filepath="$PROJECT_DIR$/NicaHero.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
