@@ -3,20 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlue"
+    android:orientation="vertical"
     tools:context="com.example.enrique.nicaherolayout.FragmentIntro1">
 
     <!-- TODO: Update blank fragment layout -->
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/acercade" />
-</LinearLayout>
+
 
 </FrameLayout>
