@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sube tus archivos aqui..." />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="archivo"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subir" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Los formatos aceptados son: .mp3, .pdf, .txt y .Word, ya que en estos son los únicos donde se pueden presentar notaciones musicales como cifrado o partitura."/>
+    </LinearLayout>

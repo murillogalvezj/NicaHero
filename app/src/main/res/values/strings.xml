@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NicaHeroLayout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_intro">intro a la app</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Descripcion_Fragment1">Preparate para saber lo que siente un musico al tocar en un piano la musica nica</string>
+</resources>
