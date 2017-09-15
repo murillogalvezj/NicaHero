@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity
                 fragment=new aporta_fragment();
                 break;
 
-            case R.id.nav_ajustes:
+            case R.id.action_settings:
                 fragment=new ajustes_fragment();
                 break;
 
