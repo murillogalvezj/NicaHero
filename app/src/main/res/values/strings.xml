@@ -10,4 +10,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Descripcion_Fragment1">Preparate para saber lo que siente un musico al tocar en un piano la musica nica</string>
+    <string name="TituloIntro1">Aprende!</string>
+    <string name="ParrafoIntro1">Con nuestras lecciones pensadas para que le saques el mayor provecho a la aplicacion</string>
+    <string name="TituloIntro2">Toca!</string>
+    <string name="ParrafoIntro2">El piano virtual como todo un profesional, libera al musico que llevas dentro</string>
+    <string name="TituloIntro3">Disfruta!</string>
+    <string name="ParrafoIntro3">Con el repertorio de musica nicaraguense especialmente pensado para ti</string>
+    <string name="TituloIntro4">Dudas?</string>
+    <string name="ParrafoIntro4">No dudes en contactarnos! nicahero@gmail.com</string>
 </resources>
