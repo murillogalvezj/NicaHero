@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoev">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/artista6"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/punto"/>
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nacio en Somoto el 19 de febrero de 1945."/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/punto"/>
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Luis Enrique Mejía Godoy es uno de los más importantes cantautores nicaragüenses. Pertenece a una familia con tradición musical, su padre era músico y su hermano Carlos Mejía Godoy es también un renombrado músico."/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/punto"/>
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Participó activamente en el período de gobierno sandinista (1979-1990) con responsabilidades en él. Su obra, de contenido altamente social, es muy importante en la historia de la música de Nicaragua y Centroamérica."/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/punto"/>
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="En 1969 abandona los estudios con la firme decisión de dedicarse en exclusiva a la música. Graba sus primeros discos como miembro del grupo Los Rufos pero al año siguiente(1970) desaparece este grupo y él comienza su carrera en solitario, con la única compañía de su guitarra."/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/punto"/>
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="El 19 de julio de 1979 los sandinistas entran en Managua proclamándose el triunfo de la Revolución Nicaragüense. Luis Enrique entra a formar parte del Ministerio de Cultura, con Ernesto Cardenal como ministro, y en 1980 funda la Empresa Nicaragüense de Grabaciones Culturales (ENIGRAC) la cual dirige hasta 1988 produciendo más de 100 discos de canción popular."/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/punto"/>
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="En 1992 junto con otros cantautores funda la Asociación de Cantautores Nicaragüenses (ASCAN-VOLCANTO) la cual preside. Dicha asociación se dedica a promocionar la canción y a los artistas y músicos noveles."/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/punto"/>
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="En 1993 funda, con sus hermanos Carlos y Francisco (Chico) y otros amigos, el primer café concierto de Nicaragua La Buena Nota que se convirtió en un importante centro de la música nicaragüense. Allí trabajaría hasta mediados de 1998"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/punto"/>
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="En 1997 los hermanos Mejía Godoy crean la Fundación Mejía Godoy, fundación sin ánimo de lucro para el desarrollo cultural, desde donde realizan acciones de todo tipo, conciertos, grabaciones, programas de salud y antidroga, lucha contra el SIDA. De esta fundación surge otro proyecto: La Casa de los Mejía Godoy, importante centro del arte y cultura nicaragüense y un lugar de interés turístico."/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
