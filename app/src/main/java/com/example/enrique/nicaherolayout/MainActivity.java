@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_artistas:
-                fragment = new artistas_fragment();
+                fragment = new ArtistaFragment();
                 break;
 
             case R.id.nav_aporta:
