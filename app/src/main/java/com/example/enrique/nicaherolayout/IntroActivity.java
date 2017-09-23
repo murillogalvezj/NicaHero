@@ -57,11 +57,14 @@ public class IntroActivity extends AppIntro {
     @Override
     public void onSkipPressed(Fragment currentFragment) {
         // Do something when users tap on Skip button.
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
-
+       IniciarMain();
+        finish();
     }
 
+    public void IniciarMain(){
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
 
 
     @Override

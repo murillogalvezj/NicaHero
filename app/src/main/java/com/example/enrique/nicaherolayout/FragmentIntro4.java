@@ -1,28 +1,45 @@
 package com.example.enrique.nicaherolayout;
 
-import android.content.Context;
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.firebase.ui.auth.AuthUI;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import java.util.Arrays;
+
+import static android.app.Activity.RESULT_OK;
+import static android.content.ContentValues.TAG;
+import static com.example.enrique.nicaherolayout.R.id.btn_artista;
 
 
-
-public class FragmentIntro4 extends Fragment {
+public class FragmentIntro4 extends Fragment{
+    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth.AuthStateListener authStateListener;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
+
+    private static final int SIGN_IN_CODE = 200;
+
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
 
     public FragmentIntro4() {
-        // Required empty public constructor
+
     }
 
     /**
@@ -43,14 +60,43 @@ public class FragmentIntro4 extends Fragment {
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
+
+    public void onCreate(final  Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+       // Button btnLogin = itemView.findViewById(R.id.botonSesion);
+        //btnLogin.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+           // public void onClick(View view) {
+               // startActivityForResult(
+                     //   AuthUI.getInstance()
+                          //      .createSignInIntentBuilder()
+                          //      .setAvailableProviders(
+                                    //    Arrays.asList(
+                                  //              new AuthUI.IdpConfig.Builder(AuthUI.GOOGLE_PROVIDER).build()))
+                                //.build(),
+                      //  SIGN_IN_CODE);
+           // }
+        //});
+
+       // firebaseAuth = FirebaseAuth.getInstance();
+       // authStateListener = new FirebaseAuth.AuthStateListener() {
+           // @Override
+           // public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+              //  if (firebaseAuth.getCurrentUser() !=null){
+               //     iniciarMainActivity(itemView);
+               // }
+           // }
+       // };
     }
+
+
+    //private void iniciarMainActivity(View view) {
+       // Intent i = new Intent(view.getContext(),MainActivity.class);
+       // i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
+       // view.getContext().startActivity(i);
+    //}
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -59,5 +105,16 @@ public class FragmentIntro4 extends Fragment {
         return inflater.inflate(R.layout.fragment_intro4, container, false);
     }
 
+    //@Override
+    //public void onStart() {
+    //    super.onStart();
+     //   firebaseAuth.addAuthStateListener(authStateListener);
+    //}
 
+    //@Override
+   // public void onStop() {
+    //    super.onStop();
+    //    if(authStateListener!=null)
+    //        firebaseAuth.removeAuthStateListener(authStateListener);
+   // }
 }

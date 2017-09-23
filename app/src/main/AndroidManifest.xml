@@ -29,15 +29,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".IntroActivity1"></activity>
-        <activity android:name=".Artista1Activity"></activity>
-        <activity android:name=".Artista2Activity"></activity>
-        <activity android:name=".Artista3Activity"></activity>
-        <activity android:name=".Artista4Activity"></activity>
-        <activity android:name=".Artista5Activity"></activity>
-        <activity android:name=".Artista6Activity"></activity>
-        <activity android:name=".Artista7Activity"></activity>
-
+        <activity android:name=".IntroActivity1" />
+        <activity android:name=".Artista1Activity" />
+        <activity android:name=".Artista2Activity" />
+        <activity android:name=".Artista3Activity" />
+        <activity android:name=".Artista4Activity" />
+        <activity android:name=".Artista5Activity" />
+        <activity android:name=".Artista6Activity" />
+        <activity android:name=".Artista7Activity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".PerfilActivity"></activity>
     </application>
 
 </manifest>

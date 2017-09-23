@@ -1,6 +1,8 @@
 package com.example.enrique.nicaherolayout;
 
+import android.app.Activity;
 import android.app.FragmentTransaction;
+import android.content.ClipData;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -18,14 +20,22 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -111,38 +121,49 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    private void displaySelectedScreen(int id){
-        Fragment fragment=null;
+    private void displaySelectedScreen(int id) {
+        Fragment fragment = null;
 
-        switch (id){
-            case R.id.nav_inicio:
-                fragment=new inicio_fragment();
-                break;
+            switch (id) {
+                case R.id.nav_inicio:
+                    fragment = new inicio_fragment();
+                    break;
 
-            case R.id.nav_musica:
-                fragment = new musica_fragment();
-                break;
+                case R.id.nav_musica:
+                    fragment = new musica_fragment();
+                    break;
 
-            case R.id.nav_eventos:
-                fragment = new EventoFragment();
-                break;
+                case R.id.nav_eventos:
+                    fragment = new EventoFragment();
+                    break;
 
-            case R.id.nav_artistas:
-                fragment = new ArtistaFragment();
-                break;
+                case R.id.nav_artistas:
+                    fragment = new ArtistaFragment();
+                    break;
 
-            case R.id.nav_aporta:
-                fragment=new aporta_fragment();
-                break;
+                case R.id.nav_aporta:
+                    fragment = new aporta_fragment();
+                    break;
 
-            case R.id.action_settings:
-                fragment=new ajustes_fragment();
-                break;
+                case R.id.action_settings:
+                    fragment = new ajustes_fragment();
+                    break;
 
-            case R.id.nav_acerca_de:
-                fragment = new acerca_de_fragment();
-                break;
-        }
+                case R.id.nav_ajustes:
+                    fragment = new ajustes_fragment();
+                    break;
+
+                case R.id.nav_acerca_de:
+                    fragment = new acerca_de_fragment();
+                    break;
+
+                case R.id.nav_inicia_Sesion:
+                    Intent in = new Intent(this, LoginActivity.class);
+                    startActivity(in);
+                    break;
+            }
+
+
 
         if (fragment != null){
             android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
