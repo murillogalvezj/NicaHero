@@ -37,8 +37,11 @@
         <activity android:name=".Artista5Activity" />
         <activity android:name=".Artista6Activity" />
         <activity android:name=".Artista7Activity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".PerfilActivity"></activity>
+        <activity android:name=".PerfilActivity" />
+        <activity
+            android:name=".ajustes_activity"
+            android:label="Ajustes">
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1002717301646",
+    "firebase_url": "https://nicahero-da14f.firebaseio.com",
+    "project_id": "nicahero-da14f",
+    "storage_bucket": "nicahero-da14f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002717301646:android:2373de456dd3a842",
+        "android_client_info": {
+          "package_name": "com.example.enrique.nicaherolayout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002717301646-p03qu8i81gbt14f4r88a8ga5ginf4hfu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.enrique.nicaherolayout",
+            "certificate_hash": "4e4fa8e536b8de0d9e9618f3895a01b9a4ed6b7c"
+          }
+        },
+        {
+          "client_id": "1002717301646-dfbmvla6e3rge93bi1kckpiu78hfdnl9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.enrique.nicaherolayout",
+            "certificate_hash": "4ff01081dba9bc84a1c4e2880971c2cb4248c1e5"
+          }
+        },
+        {
+          "client_id": "1002717301646-7d3j94s6b8f5bundv062kjvdpteo1mr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_h3cO2wEarLyiXysn_UjCpX-_as_13og"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002717301646-7d3j94s6b8f5bundv062kjvdpteo1mr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

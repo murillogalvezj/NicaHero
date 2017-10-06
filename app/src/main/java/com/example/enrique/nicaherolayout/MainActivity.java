@@ -10,6 +10,7 @@ import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -26,14 +27,13 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        Fragment someFragment = new Fragment();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -89,6 +89,8 @@ public class MainActivity extends AppCompatActivity
         t.start();
     }
 
+
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -111,14 +113,24 @@ public class MainActivity extends AppCompatActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                abrirAjustes();
+                //fragment = new ajustes_fragment();
+                //replaceFragment(fragment);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
+    }
 
-        return super.onOptionsItemSelected(item);
+
+
+
+    public void abrirAjustes(){
+        Intent in= new Intent(MainActivity.this,ajustes_activity.class);
+        startActivity(in);
     }
 
     private void displaySelectedScreen(int id) {
@@ -126,15 +138,11 @@ public class MainActivity extends AppCompatActivity
 
             switch (id) {
                 case R.id.nav_inicio:
-                    fragment = new inicio_fragment();
+                    fragment = new EventoFragment();
                     break;
 
                 case R.id.nav_musica:
                     fragment = new musica_fragment();
-                    break;
-
-                case R.id.nav_eventos:
-                    fragment = new EventoFragment();
                     break;
 
                 case R.id.nav_artistas:
@@ -145,21 +153,8 @@ public class MainActivity extends AppCompatActivity
                     fragment = new aporta_fragment();
                     break;
 
-                case R.id.action_settings:
-                    fragment = new ajustes_fragment();
-                    break;
-
-                case R.id.nav_ajustes:
-                    fragment = new ajustes_fragment();
-                    break;
-
                 case R.id.nav_acerca_de:
                     fragment = new acerca_de_fragment();
-                    break;
-
-                case R.id.nav_inicia_Sesion:
-                    Intent in = new Intent(this, LoginActivity.class);
-                    startActivity(in);
                     break;
             }
 

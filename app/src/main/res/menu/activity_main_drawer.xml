@@ -9,11 +9,7 @@
         <item
             android:id="@+id/nav_musica"
             android:icon="@drawable/nav_musica"
-            android:title="Musica" />
-        <item
-            android:id="@+id/nav_eventos"
-            android:icon="@drawable/nav_evento"
-            android:title="Eventos" />
+            android:title="Musica" />o
         <item
             android:id="@+id/nav_artistas"
             android:icon="@drawable/nav_artistas"
@@ -27,17 +23,9 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_ajustes"
-                android:icon="@drawable/ic_menu_manage"
-                android:title="Ajustes" />
-            <item
                 android:id="@+id/nav_acerca_de"
                 android:icon="@drawable/nav_acerca_de"
                 android:title="Acerca De" />
-            <item
-                android:id="@+id/nav_inicia_Sesion"
-                android:icon="@drawable/nav_sesion"
-                android:title="Iniciar Sesion" />
 
         </menu>
     </item>
