@@ -25,6 +25,9 @@ public class EventoFragment extends Fragment {
 
         View view =  inflater.inflate(R.layout.eventos_fragment_layout, container, false);
 
+        getActivity().setTitle("Eventos");
+
+
         ArrayList<FuenteEventos> lista = new ArrayList<FuenteEventos>();
         lista.add(new FuenteEventos("FICCUA 2017",R.drawable.evento1,0));
         lista.add(new FuenteEventos("Cantos a la Revolución",R.drawable.evento2,0));

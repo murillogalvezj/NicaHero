@@ -1,18 +1,23 @@
 package com.example.enrique.nicaherolayout;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.common.api.GoogleApi;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Arrays;
 
@@ -26,6 +31,7 @@ public class ajustes_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ajustes_activity);
+
 
         final ImageButton btnLogin = findViewById(R.id.iniciar_sesion_google);
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +51,7 @@ public class ajustes_activity extends AppCompatActivity {
                     signOut();
                     Toast.makeText(getApplicationContext(),"Has cerrado sesion exitosamente", Toast.LENGTH_SHORT).show();
                     btnLogin.setBackgroundResource(R.drawable.inicia_google);
+                    iniciarMainActivity();
                 }
 
             }
@@ -78,6 +85,7 @@ public class ajustes_activity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == SIGN_IN_CODE){
             if (resultCode == RESULT_OK){

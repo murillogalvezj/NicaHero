@@ -4,12 +4,12 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_inicio"
-            android:icon="@drawable/nav_inicio"
-            android:title="Inicio" />
-        <item
-            android:id="@+id/nav_musica"
             android:icon="@drawable/nav_musica"
-            android:title="Musica" />o
+            android:title="Musica" />
+        <item
+            android:id="@+id/nav_eventos"
+            android:icon="@drawable/nav_evento"
+            android:title="Eventos" />
         <item
             android:id="@+id/nav_artistas"
             android:icon="@drawable/nav_artistas"

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo10"
+    tools:context="com.example.enrique.nicaherolayout.PianoActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/C4"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclai"
+                        android:text="
+
+                    C" />
+
+                    <Button
+                        android:id="@+id/D4"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclam"
+                        android:text="
+
+                    D" />
+
+                    <Button
+                        android:id="@+id/E4"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclad"
+                        android:text="
+
+                    E" />
+
+                    <Button
+                        android:id="@+id/F4"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclai"
+                        android:text="
+
+                    F" />
+
+                    <Button
+                        android:id="@+id/G4"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclaim"
+                        android:text="
+
+                    G" />
+
+                    <Button
+                        android:id="@+id/A4"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/tecladm"
+                        android:text="
+
+                    A" />
+
+                    <Button
+                        android:id="@+id/B4"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclad"
+                        android:text="
+
+                    B" />
+
+                    <Button
+                        android:id="@+id/C5"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclai"
+                        android:text="
+
+                    C" />
+
+                    <Button
+                        android:id="@+id/D5"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclam"
+                        android:text="
+
+                    D" />
+
+                    <Button
+                        android:id="@+id/E5"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclad"
+                        android:text="
+
+                    E" />
+
+                    <Button
+                        android:id="@+id/F5"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclai"
+                        android:text="
+
+                    F" />
+
+                    <Button
+                        android:id="@+id/G5"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclaim"
+                        android:text="
+
+                    G" />
+
+                    <Button
+                        android:id="@+id/A5"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/tecladm"
+                        android:text="
+
+                    A" />
+
+                    <Button
+                        android:id="@+id/B5"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclad"
+                        android:text="B8" />
+
+                    <Button
+                        android:id="@+id/C6"
+                        android:layout_width="@dimen/tecla_blanca"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/teclai"
+                        android:text="
+
+                    C" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="27dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/CS4"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="C#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="90dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/DS4"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="D#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="176dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/FS4"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="F#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="233dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/GS4"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="G#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="290dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/AS4"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="A#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="375dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/CS5"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="C#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="440dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/DS5"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="D#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="526dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/FS5"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="F#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="583dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:id="@+id/GS5"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="G#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="640dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:id="@+id/AS5"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="A#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:paddingLeft="717dp"
+                android:paddingBottom="@dimen/altura_negra"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:id="@+id/CS6"
+                    android:layout_width="@dimen/tecla_negra"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/teclasostenido"
+                    android:text="C#"
+                    android:textColor="@color/colorBlank"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

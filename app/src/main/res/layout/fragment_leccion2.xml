@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoev">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_gravity="left"
+                android:textColor="#000000"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lección 2: Escalas Mayores"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Una escala musical es un conjunto de notas que están ordenadas de forma ascendente, es decir desde la nota más grave hasta la más aguda.
+El aprender las escalas, te facilita la traslación de tonos por el piano. Además, una vez sepas la composición de cada escala, tonalidad, podrás armar los acordes y arpegios.
+Para poder armar las escalas mayores debemos tomar el siguiente patrón:
+Nota principal de la escala-tono-tono-semitono-tono-tono-tono-semitono (O sea que desde la primera nota vayas aumentando lo que se te pide) un tono son 2 semitonos, un tono más arriba de Do es Re, un tono más arriba de Mi es Fa# (ya que entre Mi y Fa solo hay un semitono de diferencia), un semitono más arriba de Sol es Sol#, y así sucesivamente.
+Este nos indica la manera en la que están conformadas estas escalas, así de este modo será fácil saber que alteraciones habrán en la escala.
+
+Así entonces la escala de Do mayor no tiene ninguna alteración:
+Do-re-mi-fa-sol-la-si-do
+
+Re tiene alteraciones que son Do# y Fa#:
+Re-mi-fa#-sol-la-si-do#-re
+
+Mi tiene Fa# Sol# Do# Re#:
+Mi-fa#-sol#-la-si-do#-re#-mi
+
+Fa solo tiene la#:
+Fa-sol-la-la#-do-re-mi-fa
+
+Sol solo tiene fa#:
+Sol-la-si-do-re-mi-fa#-sol
+
+La tiene 3:
+La-si-do#-re-mi-fa#-sol#-la
+
+
+Y finalmente Si tiene 5:
+Si-do#-re#-mi-fa#-sol#-la#-si
+
+Le recomendamos al futuro héroe a practicar y memorizar todo esto ya que esto es una valiosa enseñanza en el arte de la música.
+"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+

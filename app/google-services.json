@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1002717301646-q4541sbb860j6d8d43o7d8fa29lvblsf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.enrique.nicaherolayout",
+            "certificate_hash": "20561a1b6498d6b624d2ab816f1a33d695ea8670"
+          }
+        },
+        {
           "client_id": "1002717301646-p03qu8i81gbt14f4r88a8ga5ginf4hfu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -16,6 +16,7 @@ public class aporta_fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.aporta_fragment_layout, container, false);
+
     }
 
     @Override

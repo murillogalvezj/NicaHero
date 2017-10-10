@@ -5,6 +5,8 @@ import android.app.FragmentTransaction;
 import android.content.ClipData;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
@@ -20,14 +22,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import org.w3c.dom.Text;
 
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        Fragment someFragment = new Fragment();
+         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+         Fragment someFragment = new Fragment();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+
 
 
     @Override
@@ -35,6 +45,13 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
+        String nombre = null;
+        String correo = null;
+        Uri foto = null;
+        String foto1 = null;
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -45,7 +62,14 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+        //TextView nav_user = (TextView)hView.findViewById(R.id.nav_name);
+        //nav_user.setText(user);
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View hView =  navigationView.getHeaderView(0);
+        ImageView imagenPerfil =  (ImageView) hView.findViewById(R.id.imagenPerfil);
+        TextView nombrePerfil = (TextView) hView.findViewById(R.id.nombrePerfil);
+        TextView correoPerfil = (TextView) hView.findViewById(R.id.correoPerfil);
         navigationView.setNavigationItemSelectedListener(this);
 
         displaySelectedScreen(R.id.nav_inicio);
@@ -68,7 +92,8 @@ public class MainActivity extends AppCompatActivity
                     final Intent i = new Intent(MainActivity.this, IntroActivity.class);
 
                     runOnUiThread(new Runnable() {
-                        @Override public void run() {
+                        @Override
+                        public void run() {
                             startActivity(i);
                         }
                     });
@@ -87,8 +112,23 @@ public class MainActivity extends AppCompatActivity
 
         // Start the thread
         t.start();
-    }
 
+        if (user != null) {
+            nombre = user.getDisplayName();
+            nombrePerfil.setText(nombre);
+            correo = user.getEmail();
+            correoPerfil.setText(correo);
+            foto = user.getPhotoUrl();
+            imagenPerfil.setImageURI(foto);
+        }
+        else
+        {
+                nombrePerfil.setText("Nombre Usuario");
+                correoPerfil.setText("Correo Usuario");
+                imagenPerfil.setImageURI(foto);
+        }
+
+    }
 
 
     @Override
@@ -138,11 +178,11 @@ public class MainActivity extends AppCompatActivity
 
             switch (id) {
                 case R.id.nav_inicio:
-                    fragment = new EventoFragment();
+                    fragment = new musica_fragment();
                     break;
 
-                case R.id.nav_musica:
-                    fragment = new musica_fragment();
+                case R.id.nav_eventos:
+                    fragment = new EventoFragment();
                     break;
 
                 case R.id.nav_artistas:

@@ -21,6 +21,9 @@ public class ArtistaFragment extends Fragment {
 
         View view =  inflater.inflate(R.layout.fragment_artista, container, false);
 
+        getActivity().setTitle("Artistas");
+
+
         ArrayList<com.example.enrique.nicaherolayout.FuenteArtistas> lista = new ArrayList<com.example.enrique.nicaherolayout.FuenteArtistas>();
         lista.add(new FuenteArtistas("Katia Cardenal",R.drawable.artista3,0));
         lista.add(new FuenteArtistas("Luis Enrique Mejía",R.drawable.artista2,0));

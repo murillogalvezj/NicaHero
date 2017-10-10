@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoev">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_gravity="left"
+                android:textColor="#000000"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lección 3: Nombre de los grados de las escalas"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saber los grados de las escalas nos ayudaran para la creación de los acordes (mayores, menores, séptimas) y arpegios, estos se representan con su nombre o un numero en griego si se mira en cualquier otra lección sabremos de que hablamos de ese grado de la escala. Estos son:
+
+ I Tónica: hace referencia al primer grado de una escala musical, que es la nota que define la tonalidad, que por lo general es la primera nota de la escala musical. Principalmente hace referencia al acorde que se formar sobre dicha nota. Por ejemplo, en la escala de do mayor la tónica es do
+
+II Supertónica: hace referencia al segundo grado de una escala musical, que por lo general es la segunda nota de la escala, Por ejemplo en la escala de do mayor la supertónica es re, y el acorde supertónico estaría formado por las notas re-fa-la
+
+III Mediante: hace referencia al tercer grado de una escala musical, que por lo general es la tercera nota de la escala, por ejemplo en la escala de do mayor la mediante es la nota mi, a la vez la mediante puede determinarte si estamos en una escala menor (vea lección x).
+
+IV Subdominante: hace referencia al cuarto grado de una escala musical, que por lo general es la cuarta nota de la escala, esta y dominante están relacionadas entre sí, ya que para hallar la subdominante debemos bajar 3 tonos y medio desde la tónica, mientras que para la hallar la dominante debemos subir 3 tonos y medio. Por ejemplo en la escala de do mayor la nota subdominante es fa, y el acorde subdominante se conforma por fa-la-do
+
+V Dominante: hace referencia al quinto grado de una escala musical, que por lo general es la quinta nota de la escala, por ejemplo en la escala de do mayor la dominante es sol, y el acorde dominante está conformado por sol-si-re (sol mayor)
+
+VI Submediante o Superdominante: hace referencia al sexto grado de una escala musical, que por lo general es la sexta nota de la escala, se le puede llamar superdominante porque está un grado más arriba con respecto a la dominante. Por ejemplo, en la escala de do mayor la nota submediante es la, y el acorde submediante está conformado por la-do-mi
+
+VII Sensible: hace referencia al séptimo grado de una escala musical, que por lo general es la séptima nota de la escala, También es común que esta se encuentre medio tono por debajo de la tónica (en el caso de las mayores), en caso que este un tono por debajo (en el caso de las menores) se le da el nombre de subtónica, no hay que confundirse al emplear bien cada termino. Por ejemplo en la escala de do mayor la sensible es la nota si, y en la escala de mi menor la nota subtónica es re (véase lección x).
+"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
