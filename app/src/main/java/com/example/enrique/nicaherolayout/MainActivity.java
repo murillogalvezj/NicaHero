@@ -25,6 +25,7 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -119,13 +120,17 @@ public class MainActivity extends AppCompatActivity
             correo = user.getEmail();
             correoPerfil.setText(correo);
             foto = user.getPhotoUrl();
-            imagenPerfil.setImageURI(foto);
+            //imagenPerfil.setImageURI(foto);
+            Glide.with(this)
+                    .load(foto)
+                    .override(600, 600)
+                    .into(imagenPerfil);
         }
         else
         {
                 nombrePerfil.setText("Nombre Usuario");
                 correoPerfil.setText("Correo Usuario");
-                imagenPerfil.setImageURI(foto);
+                //imagenPerfil.setImageURI(foto);
         }
 
     }

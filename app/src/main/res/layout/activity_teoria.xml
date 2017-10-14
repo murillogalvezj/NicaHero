@@ -1,39 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:background="@color/colorBlanco"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
     android:layout_gravity="center">
 
-    <Button
-        android:id="@+id/leccion1"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Leccion 1: Cifrado Americano"/>
+        android:padding="30dp"
+        android:layout_gravity="center">>
 
-    <Space
+        <Button
+            android:id="@+id/leccion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leccion 1: Cifrado Americano"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/leccion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leccion 2: Escalas Mayores"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/leccion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lección 3: Nombre de los grados de las escalas"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+</LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp" />
+        android:layout_height="match_parent"
+        android:background="@drawable/fondomusica">
 
-    <Button
-        android:id="@+id/leccion2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Leccion 2: Escalas Mayores"/>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp" />
-
-    <Button
-        android:id="@+id/leccion3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lección 3: Nombre de los grados de las escalas"/>
-
-
+    </LinearLayout>
 </LinearLayout>
 
 

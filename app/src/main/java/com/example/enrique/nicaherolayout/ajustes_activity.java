@@ -58,6 +58,7 @@ public class ajustes_activity extends AppCompatActivity {
         });
 
         final ImageButton btnLoginFace = findViewById(R.id.iniciar_sesion_facebook);
+        btnLoginFace.setEnabled(false);
         btnLoginFace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

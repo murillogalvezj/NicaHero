@@ -2,14 +2,14 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    android:background="@color/colorBlanco">
 
 
         <LinearLayout
+            android:backgroundTint="@color/colorBlanco"
             android:layout_marginTop="80dp"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
@@ -17,6 +17,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:background="@color/colorBlanco"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -33,12 +34,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Aprende"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
                     android:textSize="45px"/>
 
 
             </LinearLayout>
 
             <LinearLayout
+                android:background="@color/colorBlanco"
                 android:layout_marginLeft="120px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,6 +60,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Evalúate"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
                     android:textSize="45px"/>
 
             </LinearLayout>
@@ -64,6 +70,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:background="@color/colorBlanco"
             android:layout_marginTop="140px"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
@@ -87,12 +94,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Juega"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
                     android:textSize="45px"/>
 
 
             </LinearLayout>
 
             <LinearLayout
+                android:background="@color/colorBlanco"
                 android:layout_marginLeft="120px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -110,9 +120,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Teoría"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
                     android:textSize="45px"/>
 
             </LinearLayout>
 
         </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondomusica"
+        android:orientation="vertical">
+
+    </LinearLayout>
  </LinearLayout>

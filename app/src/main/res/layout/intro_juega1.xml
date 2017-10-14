@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toca el piano sin reglas!"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:padding="25dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="En esta seccion eres libre de toca cualquier nota que quieras, olvidate de las teclas sombreadas y pon en practica lo que aprendiste con nuestro piano virtual!"
+        android:padding="25dp"
+        android:textSize="15dp"
+        android:textAlignment="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@drawable/tres"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"/>
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:id="@+id/sig_aprende1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/next" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

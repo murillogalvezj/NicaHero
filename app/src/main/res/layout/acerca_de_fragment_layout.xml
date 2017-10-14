@@ -18,8 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Esta es una aplicacion desarrollada para musicos epertos que quieran seguir aumentando sus conocimientos,
-        y tambien para musicos inexpertos que quieran introducirse en el mundo de la musica"
+        android:text="Esta es una aplicacion desarrollada para musicos expertos que quieran seguir aumentando sus conocimientos, y tambien para musicos inexpertos que quieran introducirse en el mundo de la musica."
         android:textAlignment="center"
         android:textSize="20dp"
         android:layout_margin="40dp"/>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escucha solo la melodia"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:padding="25dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dale click a este boton si quieres guiarte con la melodia y ser tu el que toque el piano"
+        android:padding="25dp"
+        android:textSize="15dp"
+        android:textAlignment="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@drawable/dos"/>
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <ImageButton
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:id="@+id/atras_aprende1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/back" />
+
+        <Space
+            android:layout_weight="35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:id="@+id/sig_aprende1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/next" />
+
+    </LinearLayout>
+
+</LinearLayout>

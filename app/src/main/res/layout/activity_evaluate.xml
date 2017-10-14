@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo10"
+    android:background="@drawable/fondomusica"
     tools:context="com.example.enrique.nicaherolayout.EvaluateActivity">
 
     <LinearLayout
@@ -35,13 +35,13 @@
                     android:text="Musica"
                     android:textSize="30dp"
                     android:typeface="serif"
-                    android:textStyle="italic"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorPrimary"/>
 
-                <Button
+                <ImageButton
+                    android:background="@drawable/comenzar_musica"
                     android:id="@+id/py1"
                     android:layout_width="60dp"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="60dp" />
 
             </LinearLayout>
 
@@ -56,15 +56,27 @@
                     android:text="Melodia"
                     android:textSize="30dp"
                     android:typeface="serif"
-                    android:textStyle="italic"
-                    android:textColor="@color/colorBlank"/>
 
-                <Button
+                    android:textColor="@color/colorPrimary"/>
+
+                <ImageButton
+                    android:background="@drawable/comenzar_pista"
                     android:id="@+id/py2"
                     android:layout_width="60dp"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="60dp"/>
 
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/puntaje"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_width="100dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="50dp"
+                android:textSize="25dp"
+                />
 
         </LinearLayout>
 
@@ -85,8 +97,8 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_alignParentBottom="true">
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -233,9 +245,9 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="27dp"
+                android:layout_alignParentBottom="true"
                 android:paddingBottom="@dimen/altura_negra"
-                android:layout_alignParentBottom="true">
+                android:paddingLeft="27dp">
 
                 <Button
                     android:id="@+id/CS4"
@@ -243,16 +255,16 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="C#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="90dp"
+                android:layout_alignParentBottom="true"
                 android:paddingBottom="@dimen/altura_negra"
-                android:layout_alignParentBottom="true">
+                android:paddingLeft="90dp">
 
                 <Button
                     android:id="@+id/DS4"
@@ -260,16 +272,16 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="D#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="176dp"
+                android:layout_alignParentBottom="true"
                 android:paddingBottom="@dimen/altura_negra"
-                android:layout_alignParentBottom="true">
+                android:paddingLeft="176dp">
 
                 <Button
                     android:id="@+id/FS4"
@@ -277,16 +289,16 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="F#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="233dp"
+                android:layout_alignParentBottom="true"
                 android:paddingBottom="@dimen/altura_negra"
-                android:layout_alignParentBottom="true">
+                android:paddingLeft="233dp">
 
                 <Button
                     android:id="@+id/GS4"
@@ -294,16 +306,16 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="G#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="290dp"
+                android:layout_alignParentBottom="true"
                 android:paddingBottom="@dimen/altura_negra"
-                android:layout_alignParentBottom="true">
+                android:paddingLeft="290dp">
 
                 <Button
                     android:id="@+id/AS4"
@@ -311,16 +323,16 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="A#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="375dp"
+                android:layout_alignParentBottom="true"
                 android:paddingBottom="@dimen/altura_negra"
-                android:layout_alignParentBottom="true">
+                android:paddingLeft="375dp">
 
                 <Button
                     android:id="@+id/CS5"
@@ -328,16 +340,16 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="C#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="440dp"
+                android:layout_alignParentBottom="true"
                 android:paddingBottom="@dimen/altura_negra"
-                android:layout_alignParentBottom="true">
+                android:paddingLeft="440dp">
 
                 <Button
                     android:id="@+id/DS5"
@@ -345,16 +357,16 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="D#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="526dp"
+                android:layout_alignParentBottom="true"
                 android:paddingBottom="@dimen/altura_negra"
-                android:layout_alignParentBottom="true">
+                android:paddingLeft="526dp">
 
                 <Button
                     android:id="@+id/FS5"
@@ -362,17 +374,17 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="F#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="583dp"
-                android:paddingBottom="@dimen/altura_negra"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:paddingBottom="@dimen/altura_negra"
+                android:paddingLeft="583dp">
 
                 <Button
                     android:id="@+id/GS5"
@@ -380,17 +392,17 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="G#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="640dp"
-                android:paddingBottom="@dimen/altura_negra"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:paddingBottom="@dimen/altura_negra"
+                android:paddingLeft="640dp">
 
                 <Button
                     android:id="@+id/AS5"
@@ -398,17 +410,17 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="A#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:paddingLeft="717dp"
-                android:paddingBottom="@dimen/altura_negra"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:paddingBottom="@dimen/altura_negra"
+                android:paddingLeft="717dp">
 
                 <Button
                     android:id="@+id/CS6"
@@ -416,7 +428,7 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/teclasostenido"
                     android:text="C#"
-                    android:textColor="@color/colorBlank"/>
+                    android:textColor="@color/colorBlank" />
 
             </LinearLayout>
 

@@ -51,35 +51,28 @@ public class musica_fragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         if (view.getId() == btn_libre.getId()) {
 
-            Intent intent = new Intent(view.getContext(), PianoActivity.class);
+            Intent intent = new Intent(view.getContext(), ActivityIntroJuega1.class);
             view.getContext().startActivity(intent);
 
         }
 
         if (view.getId() == btn_aprende.getId()) {
 
-            Intent intent = new Intent(view.getContext(), AprendeActivity.class);
+            Intent intent = new Intent(view.getContext(), ActivityIntroAprende1.class);
             view.getContext().startActivity(intent);
 
         }
 
         if (view.getId() == btn_teoria.getId()) {
 
-            Fragment fragment = null;
-            FragmentManager fragmentManager = getFragmentManager();
-            fragment = new TeoriaActivity();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.content_main, fragment);
-            fragmentTransaction.commit();
-
-            //Intent intent = new Intent(view.getContext(), TeoriaActivity.class);
-            //view.getContext().startActivity(intent);
+            Intent intent = new Intent(view.getContext(), TeoriaActivity.class);
+            view.getContext().startActivity(intent);
 
         }
 
         if (view.getId() == btn_ensayo.getId()) {
 
-            Intent intent = new Intent(view.getContext(), EvaluateActivity.class);
+            Intent intent = new Intent(view.getContext(), ActivityIntroEvaluate1.class);
             view.getContext().startActivity(intent);
 
         }

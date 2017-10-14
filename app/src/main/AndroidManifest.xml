@@ -21,52 +21,132 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ActivityIntroAprende1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityIntroAprende2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityIntroAprende3"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityIntroAprende4"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityIntroEvaluate1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityIntroEvaluate2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityIntroEvaluate3"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityIntroEvaluate4"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityIntroEvaluate5"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityIntroJuega1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
             android:name=".IntroActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity android:name=".IntroActivity1" />
-        <activity android:name=".Artista1Activity"
-            android:label="Artista"/>
-        <activity android:name=".Artista2Activity"
-            android:label="Artista"/>
-        <activity android:name=".Artista3Activity"
-            android:label="Artista"/>
-        <activity android:name=".Artista4Activity"
-            android:label="Artista"/>
-        <activity android:name=".Artista5Activity"
-            android:label="Artista"/>
-        <activity android:name=".Artista6Activity"
-            android:label="Artista"/>
-        <activity android:name=".Artista7Activity"
-            android:label="Artista"/>
+        <activity
+            android:name=".Artista1Activity"
+            android:label="Artista" />
+        <activity
+            android:name=".Artista2Activity"
+            android:label="Artista" />
+        <activity
+            android:name=".Artista3Activity"
+            android:label="Artista" />
+        <activity
+            android:name=".Artista4Activity"
+            android:label="Artista" />
+        <activity
+            android:name=".Artista5Activity"
+            android:label="Artista" />
+        <activity
+            android:name=".Artista6Activity"
+            android:label="Artista" />
+        <activity
+            android:name=".Artista7Activity"
+            android:label="Artista" />
         <activity android:name=".PerfilActivity" />
         <activity
             android:name=".EvaluateActivity"
-            android:screenOrientation="landscape"/>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".AprendeActivity"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".PianoActivity"
-            android:screenOrientation="landscape"/>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".ajustes_activity"
-            android:label="Ajustes">
-        </activity>
-        <activity android:name=".Evento1Activity"
-            android:label=" "/>
-        <activity android:name=".Evento2Activity"
-            android:label=" "/>
-        <activity android:name=".Evento3Activity"
-            android:label=" "/>
-        <activity android:name=".Evento4Activity"
-            android:label=" "/>
+            android:label="Ajustes" />
+        <activity
+            android:name=".Evento1Activity"
+            android:label=" " />
+        <activity
+            android:name=".Evento2Activity"
+            android:label=" " />
+        <activity
+            android:name=".Evento3Activity"
+            android:label=" " />
+        <activity
+            android:name=".Evento4Activity"
+            android:label=" " />
+        <activity
+            android:name=".TeoriaActivity"
+            android:label="Teoria" />
+        <activity
+            android:name=".Leccion1"
+            android:label="Cifrado Americano" />
+        <activity
+            android:name=".Leccion2"
+            android:label="Escalas Mayores" />
+        <activity
+            android:name=".Leccion3"
+            android:label="Nombre de los grados de las escalas" />
     </application>
 
 </manifest>
